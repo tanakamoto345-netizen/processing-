@@ -45,4 +45,13 @@ void draw() {
   fill(200, 100, 100);
   box(50);
   popMatrix();
+void keyPressed() {
+  if (key == 'w') playerZ -= 10;
+  if (key == 's') playerZ += 10;
+  if (key == 'a') playerX -= 10;
+  if (key == 'd') playerX += 10;
+  if (key == ' ') playerY -= 10;     
+  if (keyCode == SHIFT) playerY += 10; 
+}
+
 }
