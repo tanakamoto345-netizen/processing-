@@ -10,14 +10,15 @@ Processingの3D描画機能（P3D）を使い、キーボード操作で動か�
 ---
 
 ## 🎮 操作方法
-| キーpush(押す）     | 動作                |
-|--------  　　　　　　|--------------------|
-| Wpush    　　　　　　| 前進 (Z軸 -)       |
-| Spush   　　　　　　 | 後退 (Z軸 +)       |
-| Apush   　　　　　　 | 左移動 (X軸 -)     |
-| Dpush    　　　　　　| 右移動 (X軸 +)     |
-| スペースpush  　　　 | 上昇 (ジャンプ)  　 |
-| Shiftpush     　　　| 下降 (しゃがみ)     |
+| キー | 動作 |
+|------|------|
+| W | 前進（Z軸 -） |
+| S | 後退（Z軸 +） |
+| A | 左移動（X軸 -） |
+| D | 右移動（X軸 +） |
+| Space | 上昇（ジャンプ） |
+| Shift | 下降（しゃがみ） |
+
 ---
 
 ## 💻 コード
@@ -45,13 +46,4 @@ void draw() {
   fill(200, 100, 100);
   box(50);
   popMatrix();
-void keyPressed() {
-  if (key == 'w') playerZ -= 10;
-  if (key == 's') playerZ += 10;
-  if (key == 'a') playerX -= 10;
-  if (key == 'd') playerX += 10;
-  if (key == ' ') playerY -= 10;     
-  if (keyCode == SHIFT) playerY += 10; 
-}
-
 }
